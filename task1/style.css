@@ -1,0 +1,11 @@
+.selected {
+    background-color: #c70000;
+}
+
+#clicked {
+    background-color: #0400ff;
+}
+
+.possibleSearch {
+    display: block;
+}
