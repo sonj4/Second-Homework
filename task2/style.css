@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+#container
+{
+    height: auto;
+    width:auto;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: gray;
+    
+}
+#start
+{
+    height: 220px;
+    width: 400px;
+   display: block;
+}
+#start h2,
+#winner h2
+{
+    font-size: 50px;
+    color: wheat;
+}
+#start #line
+{
+    height: 1px;
+    width: 100%;
+    background-color: wheat;
+    margin: 20px 0;
+}
+#start h4
+{
+    font-size: 25px;
+    color: wheat;
+}
+#start #button
+{
+    height: auto;
+    width: 700px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+#button button
+{
+    height: 55px;
+    width: 170px;
+    cursor: pointer;
+    background-color: wheat;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+#start #button button:hover
+#winner #button button:hover
+{
+    transform: scale(0.90);
+}
+#winner #button
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#winner
+{
+    display: none;
+}
+#winner #button button
+{
+    margin-top: 20px;
+}
+#main
+{
+    height: 550px;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+   display: none; 
+}
+#main #headerBtns
+{
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 2px;
+    box-shadow: 2px 2px;
+}
+#main #headerBtns button
+{
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: wheat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#main #headerBtns #O_turn
+{
+    left: 160px;
+    z-index: 3;
+}
+#showChange
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background-color: white;
+    z-index: 1;
+}
+#gameBoard
+{
+    height: 400px;
+    width: 330px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.boxes
+{
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px;
+}
+.boxes i
+{
+    font-size: 60px;
+    color: wheat;
+    padding: 5px;
+}
