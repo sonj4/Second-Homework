@@ -1,7 +1,7 @@
 var form = document.getElementById('addForm'); //form
 var itemList = document.getElementById('items'); //ul
 var filter = document.getElementById('filter'); //search input
-var todoList = Array();
+var taskList = Array();
 // form submit event
 form.addEventListener('submit', addItem);
 
@@ -35,6 +35,11 @@ function addItem(e){
     //append li to list
     itemList.appendChild(li);
 
+    //FOR LOCAL STORAGE
+    let str = '<li class="list-group-item">' +li.innerHTML+'</li>';
+    //console.log(str)
+    taskList.push(str);
+    window.localStorage.setItem('tasks', taskList.join(' '));
 }
 
 function addItem2 (e) {
@@ -155,15 +160,16 @@ function helpFunction(e, list, count,items) {
     } 
 }
 
+readTasks();
+
 function readTasks() {
-    if (window.localStorage.getItem("tasks") == null) {
-        alert("db is empty");
+    if (window.localStorage.getItem('tasks') == null) {
+        alert('db is empty');
     } else {
-        //var todo = document.querySelector('#todolist');
-        var savedTasks = window.localStorage.getItem("tasks");
+        itemList = document.querySelector('#items');
+        var savedTasks = window.localStorage.getItem('tasks');
         //push task to array so we dont over write old tasks the next time
-        todoList.push(savedTasks);
+        taskList.push(savedTasks);
         itemList.innerHTML = savedTasks;
     }
 }
-
