@@ -1,0 +1,80 @@
+.flex
+{
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+
+}
+.flex a
+{
+    background-color: rgb(69, 114, 151);
+    height: 35px;
+    color: aliceblue;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: 1px rgb(38, 71, 99) solid;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.timer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.timer p 
+{
+    font-size: 95px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 25px;
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.buttons button
+{
+    margin-top: 0px;
+}
+
+#start
+{
+    background-color: rgba(61, 167, 61, 0.808);
+    color: white;
+    height: 45px;
+    width: 80px;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 38%;
+    margin-right: 40px;
+
+}
+#stop
+{
+    background-color: rgb(146, 34, 34);
+    color: white;
+    height: 45px;
+    width: 80px;
+    border: 0px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+#reset
+{
+    background-color: grey;
+    color: black;
+    height: 45px;
+    width: 80px;
+    border: 0px;
+    border-radius: 5px;
+}
